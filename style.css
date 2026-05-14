@@ -200,6 +200,11 @@ nav {
     box-shadow: 0 0 9px #2FA084;
 }
 
+::selection {
+    background-color: #2FA084;
+    color: black;
+}
+
 @media (max-width :770px){
     .profile {
         display: none;
