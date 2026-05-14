@@ -68,7 +68,12 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.288)
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.288);
+    transition: all 0.4s;
+}
+
+.post:hover {
+    transform: translateY(-2px);
 }
 .post .title {
     color: #2FA084;
