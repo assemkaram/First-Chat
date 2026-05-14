@@ -1,10 +1,10 @@
 let main = document.querySelector(".posts-info");
 
-let input=document.querySelector(".search")
+let input=document.querySelector(".searc")
 
 
 function getdata(url){
-    main.innerHTML="";
+    main.innerHTML=" ";
 fetch(url)
 .then(res => res.json())
 .then((data) => {
@@ -32,3 +32,7 @@ fetch(url)
 }
 getdata("https://dummyjson.com/posts");
 
+input.addEventListener("input",()=>{
+    let s=input.value;
+    getdata(`https://dummyjson.com/posts/search?q=${s}`);
+})
