@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    outline: none;
+    border:none;
+
+    position: relative;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    max-width: 100svw;
+    min-height: 100svh;
+    background-color: #EEEEEE;
+}
+
+nav {
+    background-color: white !important;
+}
+
+.stories img {
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    border: 3px solid #2FA084;
+    transition: all 0.4s;
+}
+.stories img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 5px #2FA084;
+    cursor: pointer;
+}
+.stories {
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+    justify-content: center;
+    width: 100%;
+    min-width: 330px;
+    
+}
+.posts {
+    padding:10px;
+    width: 40%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.posts-info{
+    width: 100%;
+    min-width: 320px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post .title {
+    color: #2FA084;
+}
+.tags span {
+    background-color: #2FA084;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.reactions {
+    border-top:1px solid rgb(206, 206, 206);
+}
+
+.fa-heart {
+    color: #e64444;
+}
+
+.profile .pr {
+    width: 5svw;
+    height: 5svw;
+    border-radius: 50%;
+}
+
+.profile {
+    width: 20%;
+    background-color: white;
+    padding:20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+.profile .pp {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.no-fo {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.your-imges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.your-imges img {
+    border-radius: 10px;
+    box-shadow: 0 0 1px  ;
+}
+.content{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+}
+.msg {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin: 20px 0;
+    
+}
+
+.chats img {
+    width: 4svw;
+    height: 4svw;
+    border-radius: 50%;
+}
+.chats {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    ;
+}
+
+.chats div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid rgba(102, 102, 102, 0.353);
+    padding: 10px 0;
+}
+
+.chats div p{
+    transition: all 0.4s;
+}
+
+.chats div p:hover{
+    color: #2FA084;
+    cursor: pointer;
+}
+
+@media (max-width :770px){
+    .profile {
+        display: none;
+    }
+    .msg {
+        display: none;
+    }
+    .posts{
+        width: 100%;
+    }
+}
+
+@media (max-width:430px) {
+    .stories img {
+    width: 50px;
+    height:50px;
+    }
+}
